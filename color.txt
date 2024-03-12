@@ -1,0 +1,3 @@
+bg-  #d3e4e6
+title logo: adbdc9;
+nav hover: #FF9843
