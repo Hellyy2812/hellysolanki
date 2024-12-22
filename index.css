@@ -180,6 +180,13 @@ ul li a:hover{
     border-radius: 100%;
 }
 
+description{
+    color: var(--primary-color-dark);
+}
+.description:hover{
+    color: var(--secondary-color)
+}
+
 .contact-grid{
     width: 100%;
     height: 500px;
