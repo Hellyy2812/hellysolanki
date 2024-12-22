@@ -184,7 +184,7 @@ description{
     color: var(--primary-color-dark);
 }
 .description:hover{
-    color: var(--secondary-color)
+    color: var(--secondary-color);
 }
 
 .contact-grid{
