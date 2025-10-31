@@ -55,6 +55,90 @@ background:#326a98;
 grid-template-columns: 1fr;
 }
 }
+        .skills-section {
+  text-align: center;
+  padding: 70px 20px;
+  background: radial-gradient(circle at top left, #ffffff, #ffffff);
+  
+}
+
+.skills-heading {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #90bade;
+  margin-bottom: 40px;
+}
+
+/* ✅ Flex-based responsive grid */
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.skill {
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 18px;
+  padding: 20px 15px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  width: 130px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skill:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 18px rgba(0, 0, 0, 0.15);
+}
+
+.skill img {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 8px;
+  filter: drop-shadow(0px 2px 3px rgba(0, 0, 0, 0.2));
+}
+
+.skill span {
+  font-size: 0.95rem;
+  color: #3b4d74;
+  font-weight: 500;
+}
+
+/* ✅ RESPONSIVENESS FIX */
+@media (max-width: 1024px) {
+  .skill {
+    width: 110px;
+  }
+}
+
+@media (max-width: 768px) {
+  .skills-grid {
+    gap: 18px;
+  }
+  .skill {
+    width: 100px;
+    padding: 15px;
+  }
+  .skill img {
+    width: 42px;
+    height: 42px;
+  }
+}
+
+@media (max-width: 480px) {
+  .skills-grid {
+    justify-content: space-evenly;
+  }
+  .skill {
+    width: 45%;
+    min-width: 120px;
+  }
+}
 
     </style>
 
@@ -113,20 +197,19 @@ grid-template-columns: 1fr;
     <p>I'm an IT student , I started learning how to code during my first year of Diploma, I've been studying in this field for apparently 4 years. Throughout the years I have learnt how to build interactive and responsive websites and how to deploy them on the internet. Project building and management has always been fascinating for me. I started off by making clone projects of websites such as Youtube.com and later moved to making actual websites. I've learnt HTML, CSS and JAVASCRIPT and I'm working on my skills to become a Full Stack developer in the near future.
     </p>
 
-    <h3 class="w3-padding-16" style="color: #90bade;">My Skills</h3>
-    <p class="w3-wide" style="color: #6b7287;">HTML</p>
-    <div class="w3-light-grey">
-      <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:99%;">99%</div>
-    </div>
-    <p class="w3-wide" style="color: #6b7287;">Web Design</p>
-    <div class="w3-light-grey">
-      <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:95% ; ">95%</div>
-    </div>
-    <p class="w3-wide" style="color: #6b7287;">Javascript</p>
-    <div class="w3-light-grey">
-      <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:85%; ">85%</div>
-    </div><br>
-    </div>
+    <!--Skills section-->
+      <section id="skills" class="skills-section">
+        <h1 style="text-align:center; color:#90bade; font-size: 36px;" id="portfolio" style="margin-bottom: 30px;">Skills</h1>
+        <div class="skills-grid">
+          <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML"><span>HTML</span></div>
+          <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS"><span>CSS</span></div>
+          <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript"><span>JavaScript</span></div>
+          <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React"><span>React.js</span></div>
+          <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/webflow/webflow-original.svg" alt="Webflow"><span>Webflow</span></div>
+          <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub"><span>GitHub</span></div>
+        </div>
+      </section>
+      
 
      <!-- Portfolio Section -->
      <h1 style="text-align:center; color:#90bade;" id="portfolio">My Portfolio</h1>
@@ -186,6 +269,7 @@ grid-template-columns: 1fr;
 </section>
 </body>
 </html>
+
 
 
 
