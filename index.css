@@ -223,6 +223,17 @@ ul li a:hover{
     opacity:0.5;
 }
 
+.linkedin {
+    margin-left: 5px;
+    margin-top: 10px;
+    height: 40px;
+    width: 40px;
+}
+
+.linkedin:hover{
+    opacity: 0.5;
+}
+
 
 .description{
     color: var(--primary-color-dark);
@@ -266,4 +277,5 @@ ul li a:hover{
     .action-btns{
         margin: auto;
     }
+
 }
